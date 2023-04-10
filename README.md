@@ -20,6 +20,7 @@ Issues that I discovered while playing with this simple TypeScript app.
  
  # Getting started
 
+While in the `rocket-web-app` directory, run:
  ```bash
 sudo apt-get install -y nodejs
 npm install -g typescript
