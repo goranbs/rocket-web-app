@@ -65,17 +65,25 @@ function moveImage(image: HTMLImageElement,
                     interval: number) {
     let currentX = x;
     let currentY = y;
+    let imagesizeX = window.innerWidth - image.width;
+    let imagesizeY = window.innerHeight - image.height;
     setInterval(() => {
         currentX += x_dir;
         currentY += y_dir;
-        updateImagePosition(image, currentX, currentY);
-        updateImageAngle(image, deg);
-        if (currentX > window.innerWidth - image.width) {
+        if (currentX > imagesizeX) {
             currentX = 0;
         }
-        if (currentY > window.innerHeight - image.height) {
+        if (currentY > imagesizeY) {
             currentY = 0;
         }
+        if (currentX < 0) {
+            currentX = imagesizeX;
+        }
+        if (currentY < 0) {
+            currentY = imagesizeY;
+        }
+        updateImagePosition(image, currentX, currentY);
+        updateImageAngle(image, deg);
     }, interval);
 }
 
