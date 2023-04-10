@@ -23,6 +23,7 @@ Issues that I discovered while playing with this simple TypeScript app.
  ```bash
 sudo apt-get install -y nodejs
 npm install -g typescript
+npm install express
  ```
 
  Run `tsc` to see if successful install
@@ -39,7 +40,7 @@ A new folder `build` should be created after running `tsc`.
 
 Run server locally:
 ```bash
-node run server
+node server
 ```
 
 Build and run docker image using `docker` or `podman`:
