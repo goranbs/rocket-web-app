@@ -18,3 +18,32 @@ Issues that I discovered while playing with this simple TypeScript app.
     * Haven't looked much at this at present, but this seem to be an interesting topic with a lot of potential.
 
  
+ # Getting started
+
+ ```bash
+sudo apt-get install -y nodejs
+npm install -g typescript
+ ```
+
+ Run `tsc` to see if successful install
+ ```bash
+ tsc --version
+ ```
+
+ Compile TypeScript to JavaScript:
+ ```bash
+ tsc
+ ```
+
+A new folder `build` should be created after running `tsc`.
+
+Run server locally:
+```bash
+node run server
+```
+
+Build and run docker image using `docker` or `podman`:
+```bash
+podman build . -t myimagetag
+podman run -p 8080:8080 myimagetag
+```
