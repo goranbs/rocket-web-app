@@ -1,0 +1,13 @@
+{
+    "name": "rocket-app",
+    "version": "1.0.0",
+    "description": "Rocket web app",
+    "author": "Goeran Svaland <gobsval@gmail.com>",
+    "main": "server.js",
+    "scripts": {
+        "server": "node server.js"
+    },
+    "dependencies": {
+        "express": "^4.18.2"
+    }
+}
